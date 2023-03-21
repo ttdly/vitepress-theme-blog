@@ -1,0 +1,133 @@
+/*颜色等基础样式*/
+.custom-block {
+    border: 1px solid transparent;
+    border-radius: var(--dly-px-border-radius);
+    padding: 16px 16px 8px;
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--dly-c-text-regular);
+}
+
+.custom-block.info {
+    border-color: var(--dly-custom-info-dark);
+    color: var(--dly-custom-info-dark);
+    background-color: var(--dly-custom-info-light);
+}
+
+.custom-block.info code {
+    background-color: var(--dly-custom-info-light);
+}
+
+.custom-block.tip {
+    border-color: var(--dly-custom-tip-dark);
+    color: var(--dly-custom-tip-dark);
+    background-color: var(--dly-custom-tip-light);
+}
+
+.custom-block.tip code {
+    background-color: var(--dly-custom-tip-light);
+}
+
+.custom-block.warning {
+    border-color: var(--dly-custom-warning-dark);
+    color: var(--dly-custom-warning-dark);
+    background-color: var(--dly-custom-warning-light);
+}
+
+.custom-block.warning code {
+    background-color: var(--dly-custom-warning-light);
+}
+
+.custom-block.danger {
+    border-color: var(--dly-custom-danger-dark);
+    color: var(--dly-custom-danger-dark);
+    background-color: var(--dly-custom-danger-light);
+}
+
+.custom-block.danger code {
+    background-color: var(--dly-custom-danger-light);
+}
+
+.custom-block.details {
+    border-color: var(--dly-custom-info-dark);
+    color: var(--dly-custom-info-dark);
+    background-color: var(--dly-custom-info-light);
+}
+
+.custom-block.details code {
+    background-color: var(--dly-custom-info-light);
+}
+
+.custom-block-title {
+    font-weight: 600;
+}
+
+.custom-block p + p {
+    margin: 8px 0;
+}
+
+.custom-block.details summary {
+    margin: 0 0 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.custom-block.details summary + p {
+    margin: 8px 0;
+}
+
+.custom-block a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: opacity 0.25s;
+}
+
+.custom-block a:hover {
+    opacity: 0.6;
+}
+
+.custom-block code {
+    font-size: 13px;
+}
+
+/*位置等细节样式*/
+.custom-block {
+    margin: 16px 0;
+}
+
+.custom-block p {
+    margin: 8px 0;
+    line-height: 24px;
+}
+
+.custom-block p:first-child {
+    margin: 0;
+}
+
+.custom-block a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: opacity 0.25s;
+}
+
+.custom-block a:hover {
+    opacity: 0.6;
+}
+
+.custom-block code {
+    font-size: var(--vp-custom-block-code-font-size);
+    font-weight: 700;
+    color: inherit;
+}
+
+.custom-block div[class*='language-'] {
+    margin: 4px 0;
+}
+
+.custom-block div[class*='language-'] code {
+    font-weight: 400;
+    background-color: transparent;
+}
+

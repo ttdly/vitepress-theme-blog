@@ -1,33 +1,33 @@
 /*colors*/
 :root{
-    --ib-c-primary: #087282;
-    --ib-c-bg-back: #f0efe7;
-    --ib-c-bg-front: #fcfcfa;
-    --ib-c-bg-border: #e2e0d8;
-    --ib-c-text-primary: #303133;
-    --ib-c-text-regular: #606266;
-    --ib-c-text-placeholder: #A8ABB2;
-    --ib-c-text-light-3: #858585;
-    --ib-c-text-light-1: #eeeeee;
+    --poke-c-primary: #087282;
+    --poke-c-bg-back: #f0efe7;
+    --poke-c-bg-front: #fcfcfa;
+    --poke-c-bg-border: #e2e0d8;
+    --poke-c-text-primary: #303133;
+    --poke-c-text-regular: #606266;
+    --poke-c-text-placeholder: #A8ABB2;
+    --poke-c-text-light-3: #858585;
+    --poke-c-text-light-1: #eeeeee;
 }
 
 
 /*px*/
 :root{
-    --ib-px-border-radius: 4px;
+    --poke-px-border-radius: 4px;
 }
 
 
 /*custom*/
 :root{
-    --ib-custom-tip-dark: #67C23A;
-    --ib-custom-tip-light: #e1f3d8;
-    --ib-custom-warning-dark: #F56C6C;
-    --ib-custom-warning-light: #fde2e2;
-    --ib-custom-danger-dark: #E6A23C;
-    --ib-custom-danger-light: #faecd8;
-    --ib-custom-info-dark: #73767a;
-    --ib-custom-info-light: #e9e9eb;
+    --poke-custom-tip-dark: #67C23A;
+    --poke-custom-tip-light: #e1f3d8;
+    --poke-custom-warning-dark: #F56C6C;
+    --poke-custom-warning-light: #fde2e2;
+    --poke-custom-danger-dark: #E6A23C;
+    --poke-custom-danger-light: #faecd8;
+    --poke-custom-info-dark: #73767a;
+    --poke-custom-info-light: #e9e9eb;
 }
 
 /*icon*/
@@ -38,36 +38,36 @@
 
 /*code*/
 :root{
-    --ib-code-line-height: 1.7;
-    --ib-code-font-size: 0.875em;
-    --ib-code-font-family: Consolas, 'Courier New', monospace;
+    --poke-code-line-height: 1.7;
+    --poke-code-font-size: 0.875em;
+    --poke-code-font-family: Consolas, 'Courier New', monospace;
 
-    --ib-code-block-bg: #222222;
-    --ib-code-block-bg-light: #1e1e20;
-    --ib-code-block-divider-color: #000000;
+    --poke-code-block-bg: #222222;
+    --poke-code-block-bg-light: #1e1e20;
+    --poke-code-block-divider-color: #000000;
 
-    --ib-code-line-highlight-color: #444444;
-    --ib-code-line-number-color: var(--ib-c-text-light-3);
+    --poke-code-line-highlight-color: #444444;
+    --poke-code-line-number-color: var(--poke-c-text-light-3);
 
-    --ib-code-line-diff-add-color: #4d937522;
-    --ib-code-line-diff-add-symbol-color: #4d9375;
+    --poke-code-line-diff-add-color: #4d937522;
+    --poke-code-line-diff-add-symbol-color: #4d9375;
 
-    --ib-code-line-diff-remove-color: #ab595922;
-    --ib-code-line-diff-remove-symbol-color: #cb7676;
+    --poke-code-line-diff-remove-color: #ab595922;
+    --poke-code-line-diff-remove-symbol-color: #cb7676;
 
-    --ib-code-line-warning-color: #e6cc7722;
-    --ib-code-line-error-color: #ab595922;
+    --poke-code-line-warning-color: #e6cc7722;
+    --poke-code-line-error-color: #ab595922;
 
-    --ib-code-copy-code-border-color: transparent;
-    --ib-code-copy-code-bg: var(--ib-code-block-bg-light);
-    --ib-code-copy-code-hover-border-color: #191919;
-    --ib-code-copy-code-hover-bg: var(--ib-code-block-bg-light);
-    --ib-code-copy-code-active-text: var(--ib-c-text-light-3);
+    --poke-code-copy-code-border-color: transparent;
+    --poke-code-copy-code-bg: var(--poke-code-block-bg-light);
+    --poke-code-copy-code-hover-border-color: #191919;
+    --poke-code-copy-code-hover-bg: var(--poke-code-block-bg-light);
+    --poke-code-copy-code-active-text: var(--poke-c-text-light-3);
 
-    --ib-code-tab-divider: var(--ib-code-block-divider-color);
-    --ib-code-tab-text-color: var(--ib-c-text-light-3);
-    --ib-code-tab-bg: #191919;
-    --ib-code-tab-hover-text-color: var(--ib-c-text-light-1);
-    --ib-code-tab-active-text-color: var(--ib-c-text-light-1);
-    --ib-code-tab-active-bar-color: var(--ib-c-primary);
+    --poke-code-tab-divider: var(--poke-code-block-divider-color);
+    --poke-code-tab-text-color: var(--poke-c-text-light-3);
+    --poke-code-tab-bg: #191919;
+    --poke-code-tab-hover-text-color: var(--poke-c-text-light-1);
+    --poke-code-tab-active-text-color: var(--poke-c-text-light-1);
+    --poke-code-tab-active-bar-color: var(--poke-c-primary);
 }

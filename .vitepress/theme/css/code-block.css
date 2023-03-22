@@ -1,19 +1,19 @@
-.iblog-content div[class*='language-'] {
+.poke-content div[class*='language-'] {
   position: relative;
   margin: 16px -24px;
-  background-color: var(--ib-code-block-bg);
+  background-color: var(--poke-code-block-bg);
   overflow-x: auto;
   transition: background-color 0.5s;
 }
 
-.iblog-content div[class*='language-'] + div[class*='language-'],
-.iblog-content div[class$='-api'] + div[class*='language-'],
-.iblog-content div[class*='language-'] + div[class$='-api'] > div[class*='language-'] {
+.poke-content div[class*='language-'] + div[class*='language-'],
+.poke-content div[class$='-api'] + div[class*='language-'],
+.poke-content div[class*='language-'] + div[class$='-api'] > div[class*='language-'] {
   margin-top: -8px;
 }
 
-.iblog-content [class*='language-'] pre,
-.iblog-content [class*='language-'] code {
+.poke-content [class*='language-'] pre,
+.poke-content [class*='language-'] code {
   /*rtl:ignore*/
   direction: ltr;
   /*rtl:ignore*/
@@ -31,7 +31,7 @@
   hyphens: none;
 }
 
-.iblog-content [class*='language-'] pre {
+.poke-content [class*='language-'] pre {
   position: relative;
   z-index: 1;
   margin: 0;
@@ -40,19 +40,19 @@
   overflow-x: auto;
 }
 
-.iblog-content [class*='language-'] code {
+.poke-content [class*='language-'] code {
   display: block;
   padding: 0 24px;
   width: fit-content;
   min-width: 100%;
-  line-height: var(--ib-code-line-height);
-  font-size: var(--ib-code-font-size);
-  color: var(--ib-c-text-light-1);
+  line-height: var(--poke-code-line-height);
+  font-size: var(--poke-code-font-size);
+  color: var(--poke-c-text-light-1);
   transition: color 0.5s;
 }
 
-.iblog-content [class*='language-'] code .highlighted {
-  background-color: var(--ib-code-line-highlight-color);
+.poke-content [class*='language-'] code .highlighted {
+  background-color: var(--poke-code-line-highlight-color);
   transition: background-color 0.5s;
   margin: 0 -24px;
   padding: 0 24px;
@@ -60,15 +60,15 @@
   display: inline-block;
 }
 
-.iblog-content [class*='language-'] code .highlighted.error {
-  background-color: var(--ib-code-line-error-color);
+.poke-content [class*='language-'] code .highlighted.error {
+  background-color: var(--poke-code-line-error-color);
 }
 
-.iblog-content [class*='language-'] code .highlighted.warning {
-  background-color: var(--ib-code-line-warning-color);
+.poke-content [class*='language-'] code .highlighted.warning {
+  background-color: var(--poke-code-line-warning-color);
 }
 
-.iblog-content [class*='language-'] code .diff {
+.poke-content [class*='language-'] code .diff {
   transition: background-color 0.5s;
   margin: 0 -24px;
   padding: 0 24px;
@@ -76,52 +76,52 @@
   display: inline-block;
 }
 
-.iblog-content [class*='language-'] code .diff::before {
+.poke-content [class*='language-'] code .diff::before {
   position: absolute;
   left: 10px;
 }
 
-.iblog-content [class*='language-'] .has-focused-lines .line:not(.has-focus) {
+.poke-content [class*='language-'] .has-focused-lines .line:not(.has-focus) {
   filter: blur(0.095rem);
   opacity: 0.4;
   transition: filter 0.35s, opacity 0.35s;
 }
 
-.iblog-content [class*='language-'] .has-focused-lines .line:not(.has-focus) {
+.poke-content [class*='language-'] .has-focused-lines .line:not(.has-focus) {
   opacity: 0.7;
   transition: filter 0.35s, opacity 0.35s;
 }
 
-.iblog-content [class*='language-']:hover .has-focused-lines .line:not(.has-focus) {
+.poke-content [class*='language-']:hover .has-focused-lines .line:not(.has-focus) {
   filter: blur(0);
   opacity: 1;
 }
 
-.iblog-content [class*='language-'] code .diff.remove {
-  background-color: var(--ib-code-line-diff-remove-color);
+.poke-content [class*='language-'] code .diff.remove {
+  background-color: var(--poke-code-line-diff-remove-color);
   opacity: 0.7;
 }
 
-.iblog-content [class*='language-'] code .diff.remove::before {
+.poke-content [class*='language-'] code .diff.remove::before {
   content: '-';
-  color: var(--ib-code-line-diff-remove-symbol-color);
+  color: var(--poke-code-line-diff-remove-symbol-color);
 }
 
-.iblog-content [class*='language-'] code .diff.add {
-  background-color: var(--ib-code-line-diff-add-color);
+.poke-content [class*='language-'] code .diff.add {
+  background-color: var(--poke-code-line-diff-add-color);
 }
 
-.iblog-content [class*='language-'] code .diff.add::before {
+.poke-content [class*='language-'] code .diff.add::before {
   content: '+';
-  color: var(--ib-code-line-diff-add-symbol-color);
+  color: var(--poke-code-line-diff-add-symbol-color);
 }
 
-.iblog-content div[class*='language-'].line-numbers-mode {
+.poke-content div[class*='language-'].line-numbers-mode {
   /*rtl:ignore*/
   padding-left: 32px;
 }
 
-.iblog-content .line-numbers-wrapper {
+.poke-content .line-numbers-wrapper {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -129,18 +129,18 @@
   left: 0;
   z-index: 3;
   /*rtl:ignore*/
-  border-right: 1px solid var(--ib-code-block-divider-color);
+  border-right: 1px solid var(--poke-code-block-divider-color);
   padding-top: 20px;
   width: 32px;
   text-align: center;
-  font-family: var(--ib-code-font-family);
-  line-height: var(--ib-code-line-height);
-  font-size: var(--ib-code-font-size);
-  color: var(--ib-code-line-number-color);
+  font-family: var(--poke-code-font-family);
+  line-height: var(--poke-code-line-height);
+  font-size: var(--poke-code-font-size);
+  color: var(--poke-code-line-number-color);
   transition: border-color 0.5s, color 0.5s;
 }
 
-.iblog-content [class*='language-'] > button.copy {
+.poke-content [class*='language-'] > button.copy {
   /*rtl:ignore*/
   direction: ltr;
   position: absolute;
@@ -151,11 +151,11 @@
   display: block;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--ib-code-copy-code-border-color);
+  border: 1px solid var(--poke-code-copy-code-border-color);
   border-radius: 4px;
   width: 40px;
   height: 40px;
-  background-color: var(--ib-code-copy-code-bg);
+  background-color: var(--poke-code-copy-code-bg);
   opacity: 0;
   cursor: pointer;
   background-image: var(--vp-icon-copy);
@@ -165,27 +165,27 @@
   transition: border-color 0.25s, background-color 0.25s, opacity 0.25s;
 }
 
-.iblog-content [class*='language-']:hover > button.copy,
-.iblog-content [class*='language-'] > button.copy:focus {
+.poke-content [class*='language-']:hover > button.copy,
+.poke-content [class*='language-'] > button.copy:focus {
   opacity: 1;
 }
 
-.iblog-content [class*='language-'] > button.copy:hover,
-.iblog-content [class*='language-'] > button.copy.copied {
-  border-color: var(--ib-code-copy-code-hover-border-color);
-  background-color: var(--ib-code-copy-code-hover-bg);
+.poke-content [class*='language-'] > button.copy:hover,
+.poke-content [class*='language-'] > button.copy.copied {
+  border-color: var(--poke-code-copy-code-hover-border-color);
+  background-color: var(--poke-code-copy-code-hover-bg);
 }
 
-.iblog-content [class*='language-'] > button.copy.copied,
-.iblog-content [class*='language-'] > button.copy:hover.copied {
+.poke-content [class*='language-'] > button.copy.copied,
+.poke-content [class*='language-'] > button.copy:hover.copied {
   /*rtl:ignore*/
   border-radius: 0 4px 4px 0;
-  background-color: var(--ib-code-copy-code-hover-bg);
+  background-color: var(--poke-code-copy-code-hover-bg);
   background-image: var(--vp-icon-copied);
 }
 
-.iblog-content [class*='language-'] > button.copy.copied::before,
-.iblog-content [class*='language-'] > button.copy:hover.copied::before {
+.poke-content [class*='language-'] > button.copy.copied::before,
+.poke-content [class*='language-'] > button.copy:hover.copied::before {
   position: relative;
   top: -1px;
   /*rtl:ignore*/
@@ -193,7 +193,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--ib-code-copy-code-hover-border-color);
+  border: 1px solid var(--poke-code-copy-code-hover-border-color);
   /*rtl:ignore*/
   border-right: 0;
   border-radius: 4px 0 0 4px;
@@ -202,13 +202,13 @@
   text-align: center;
   font-size: 12px;
   font-weight: 500;
-  color: var(--ib-code-copy-code-active-text);
-  background-color: var(--ib-code-copy-code-hover-bg);
+  color: var(--poke-code-copy-code-active-text);
+  background-color: var(--poke-code-copy-code-hover-bg);
   white-space: nowrap;
   content: '已复制';
 }
 
-.iblog-content [class*='language-'] > span.lang {
+.poke-content [class*='language-'] > span.lang {
   position: absolute;
   top: 2px;
   /*rtl:ignore*/
@@ -216,11 +216,11 @@
   z-index: 2;
   font-size: 12px;
   font-weight: 500;
-  color: var(--ib-c-text-light-3);
+  color: var(--poke-c-text-light-3);
   transition: color 0.4s, opacity 0.4s;
 }
 
-.iblog-content [class*='language-']:hover > button.copy + span.lang,
-.iblog-content [class*='language-'] > button.copy:focus + span.lang {
+.poke-content [class*='language-']:hover > button.copy + span.lang,
+.poke-content [class*='language-'] > button.copy:focus + span.lang {
   opacity: 0;
 }

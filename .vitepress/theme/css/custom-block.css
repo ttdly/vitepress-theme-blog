@@ -1,61 +1,61 @@
 /*颜色等基础样式*/
 .custom-block {
     border: 1px solid transparent;
-    border-radius: var(--ib-px-border-radius);
+    border-radius: var(--poke-px-border-radius);
     padding: 16px 16px 8px;
     line-height: 24px;
     font-size: 14px;
-    color: var(--ib-c-text-regular);
+    color: var(--poke-c-text-regular);
 }
 
 .custom-block.info {
-    border-color: var(--ib-custom-info-dark);
-    color: var(--ib-custom-info-dark);
-    background-color: var(--ib-custom-info-light);
+    border-color: var(--poke-custom-info-dark);
+    color: var(--poke-custom-info-dark);
+    background-color: var(--poke-custom-info-light);
 }
 
 .custom-block.info code {
-    background-color: var(--ib-custom-info-light);
+    background-color: var(--poke-custom-info-light);
 }
 
 .custom-block.tip {
-    border-color: var(--ib-custom-tip-dark);
-    color: var(--ib-custom-tip-dark);
-    background-color: var(--ib-custom-tip-light);
+    border-color: var(--poke-custom-tip-dark);
+    color: var(--poke-custom-tip-dark);
+    background-color: var(--poke-custom-tip-light);
 }
 
 .custom-block.tip code {
-    background-color: var(--ib-custom-tip-light);
+    background-color: var(--poke-custom-tip-light);
 }
 
 .custom-block.warning {
-    border-color: var(--ib-custom-warning-dark);
-    color: var(--ib-custom-warning-dark);
-    background-color: var(--ib-custom-warning-light);
+    border-color: var(--poke-custom-warning-dark);
+    color: var(--poke-custom-warning-dark);
+    background-color: var(--poke-custom-warning-light);
 }
 
 .custom-block.warning code {
-    background-color: var(--ib-custom-warning-light);
+    background-color: var(--poke-custom-warning-light);
 }
 
 .custom-block.danger {
-    border-color: var(--ib-custom-danger-dark);
-    color: var(--ib-custom-danger-dark);
-    background-color: var(--ib-custom-danger-light);
+    border-color: var(--poke-custom-danger-dark);
+    color: var(--poke-custom-danger-dark);
+    background-color: var(--poke-custom-danger-light);
 }
 
 .custom-block.danger code {
-    background-color: var(--ib-custom-danger-light);
+    background-color: var(--poke-custom-danger-light);
 }
 
 .custom-block.details {
-    border-color: var(--ib-custom-info-dark);
-    color: var(--ib-custom-info-dark);
-    background-color: var(--ib-custom-info-light);
+    border-color: var(--poke-custom-info-dark);
+    color: var(--poke-custom-info-dark);
+    background-color: var(--poke-custom-info-light);
 }
 
 .custom-block.details code {
-    background-color: var(--ib-custom-info-light);
+    background-color: var(--poke-custom-info-light);
 }
 
 .custom-block-title {

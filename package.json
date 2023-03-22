@@ -1,11 +1,16 @@
 {
-  "devDependencies": {
-    "vitepress": "1.0.0-alpha.61",
-    "vue": "^3.2.47"
-  },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.37.0",
+    "eslint": "^8.36.0",
+    "typescript": "^5.0.2",
+    "vitepress": "1.0.0-alpha.61",
+    "vue": "^3.2.47"
   }
 }

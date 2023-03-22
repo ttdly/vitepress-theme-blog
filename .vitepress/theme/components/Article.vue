@@ -1,12 +1,12 @@
-<template>
-  <div class="PokeMain">
-    <Content class="poke-content"/>
-  </div>
-</template>
-
-<script setup>
+<script setup xmlns="">
 
 </script>
+
+<template>
+  <div class="PokeMain">
+    <Content class="poke-content" />
+  </div>
+</template>
 
 <style scoped>
 

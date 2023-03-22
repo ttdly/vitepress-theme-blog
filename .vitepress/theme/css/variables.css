@@ -1,14 +1,17 @@
 /*colors*/
 :root{
     --poke-c-primary: #087282;
+    --poke-c-primary-dark: #043a42;
     --poke-c-bg-back: #f0efe7;
     --poke-c-bg-front: #fcfcfa;
     --poke-c-bg-border: #e2e0d8;
     --poke-c-text-primary: #303133;
-    --poke-c-text-regular: #606266;
+    --poke-c-text-regular: #343d4b;
     --poke-c-text-placeholder: #A8ABB2;
     --poke-c-text-light-3: #858585;
     --poke-c-text-light-1: #eeeeee;
+    --poke-c-divider: rgba(60, 60, 67, 0.12);
+    --poke-c-bg-soft: #f6f6f7;
 }
 
 

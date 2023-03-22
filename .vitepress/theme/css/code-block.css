@@ -1,9 +1,49 @@
+.poke-content :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  font-size: var(--poke-code-font-size);
+}
+
+.poke-content :not(pre) > code {
+  border-radius: 4px;
+  padding: 3px 6px;
+  color: #476582;
+  background-color: #F6F6F7;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.poke-content h1 > code,
+.poke-content > code,
+.poke-content h3 > code {
+  font-size: 0.9em;
+}
+
+.poke-content a > code {
+  color: var(--poke-c-primary);
+  transition: color 0.25s;
+}
+
+.vp-doc a:hover > code {
+  color: var(--poke-c-primary-dark);
+}
+
 .poke-content div[class*='language-'] {
   position: relative;
   margin: 16px -24px;
   background-color: var(--poke-code-block-bg);
   overflow-x: auto;
   transition: background-color 0.5s;
+}
+
+@media (min-width: 640px) {
+  .poke-content div[class*='language-'] {
+    border-radius: var(--poke-px-border-radius);
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .poke-content li div[class*='language-'] {
+    border-radius: var(--poke-px-border-radius) 0 0 var(--poke-px-border-radius);
+  }
 }
 
 .poke-content div[class*='language-'] + div[class*='language-'],

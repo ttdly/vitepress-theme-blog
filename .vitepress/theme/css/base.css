@@ -30,8 +30,8 @@ body {
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
-    color: var(--ib-c-text-primary);
-    background-color: var(--ib-c-bg-back);
+    color: var(--poke-c-text-primary);
+    background-color: var(--poke-c-bg-back);
     direction: ltr;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -96,7 +96,7 @@ pre,
 code,
 kbd,
 samp {
-    font-family: var(--ib-code-font-family);
+    font-family: var(--poke-code-font-family);
 }
 
 img,
@@ -173,17 +173,17 @@ input {
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-    color: var(--ib-c-text-placeholder);
+    color: var(--poke-c-text-placeholder);
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-    color: var(--ib-c-text-placeholder);
+    color: var(--poke-c-text-placeholder);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--ib-c-text-placeholder);
+    color: var(--poke-c-text-placeholder);
 }
 
 input::-webkit-outer-spin-button,

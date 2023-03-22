@@ -1,0 +1,230 @@
+/*Headings*/
+.poke-content h1,
+.poke-content h2,
+.poke-content h3,
+.poke-content h4,
+.poke-content h5,
+.poke-content h6 {
+    position: relative;
+    font-weight: 600;
+    outline: none;
+}
+
+.poke-content h1 {
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.poke-content h2 {
+    margin: 48px 0 16px;
+    border-top: 1px solid var(--vp-c-divider);
+    padding-top: 24px;
+    letter-spacing: -0.02em;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.poke-content h3 {
+    margin: 32px 0 0;
+    letter-spacing: -0.01em;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.poke-content .header-anchor {
+    float: left;
+    margin-left: -0.87em;
+    padding-right: 0.23em;
+    font-weight: 500;
+    user-select: none;
+    opacity: 0;
+    transition: color 0.25s, opacity 0.25s;
+}
+
+.poke-content .header-anchor:before {
+    content: var(--vp-header-anchor-symbol);
+}
+
+.poke-content h1:hover .header-anchor,
+.poke-content h1 .header-anchor:focus,
+.poke-content h2:hover .header-anchor,
+.poke-content h2 .header-anchor:focus,
+.poke-content h3:hover .header-anchor,
+.poke-content h3 .header-anchor:focus,
+.poke-content h4:hover .header-anchor,
+.poke-content h4 .header-anchor:focus,
+.poke-content h5:hover .header-anchor,
+.poke-content h5 .header-anchor:focus,
+.poke-content h6:hover .header-anchor,
+.poke-content h6 .header-anchor:focus {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .poke-content h1 {
+        letter-spacing: -0.02em;
+        line-height: 40px;
+        font-size: 32px;
+    }
+}
+
+/**
+ * Paragraph and inline elements
+ * -------------------------------------------------------------------------- */
+
+.poke-content p,
+.poke-content summary {
+    margin: 16px 0;
+}
+
+.poke-content p {
+    line-height: 28px;
+}
+
+.poke-content blockquote {
+    margin: 16px 0;
+    border-left: 2px solid var(--poke-c-text-placeholder);
+    padding-left: 16px;
+    transition: border-color 0.5s;
+}
+
+.poke-content blockquote > p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--poke-c-text-regular);
+    transition: color 0.5s;
+}
+
+.poke-content a {
+    font-weight: 500;
+    color: var(--poke-c-text-primary);
+    text-decoration: underline var(--poke-c-text-placeholder);
+    transition: text-decoration 0.25s;
+}
+
+.poke-content a:hover {
+
+    text-decoration: underline;
+}
+
+.poke-content strong {
+    font-weight: 600;
+}
+
+/**
+ * Lists
+ * -------------------------------------------------------------------------- */
+
+.poke-content ul,
+.poke-content ol {
+    padding-left: 1.25rem;
+    margin: 16px 0;
+}
+
+.poke-content ul {
+    list-style: disc;
+}
+
+.poke-content ol {
+    list-style: decimal;
+}
+
+.poke-content li + li {
+    margin-top: 8px;
+}
+
+.poke-content li > ol,
+.poke-content li > ul {
+    margin: 8px 0 0;
+}
+
+/**
+ * Table
+ * -------------------------------------------------------------------------- */
+
+.poke-content table {
+    display: block;
+    border-collapse: collapse;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.poke-content tr {
+    border-top: 1px solid var(--poke-c-divider);
+    transition: background-color 0.5s;
+}
+
+.poke-content tr:nth-child(2n) {
+    background-color: var(--poke-c-bg-soft);
+}
+
+.poke-content th,
+.poke-content td {
+    border: 1px solid var(--poke-c-divider);
+    padding: 8px 16px;
+}
+
+.poke-content th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--poke-c-text-regular);
+    background-color: var(--poke-c-bg-soft);
+}
+
+.poke-content td {
+    font-size: 14px;
+}
+
+/**
+ * Decorational elements
+ * -------------------------------------------------------------------------- */
+
+.poke-content hr {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid var(--poke-c-divider);
+}
+
+/**
+ * Custom Block
+ * -------------------------------------------------------------------------- */
+
+.poke-content .custom-block {
+    margin: 16px 0;
+}
+
+.poke-content .custom-block p {
+    margin: 8px 0;
+    line-height: 24px;
+}
+
+.poke-content .custom-block p:first-child {
+    margin: 0;
+}
+
+.poke-content .custom-block a {
+    color: inherit;
+    font-weight: 600;
+}
+
+.poke-content .custom-block a:hover {
+    text-decoration: underline;
+}
+
+.poke-content .custom-block code {
+    font-size: var(--vp-custom-block-code-font-size);
+    font-weight: 700;
+    color: inherit;
+}
+
+.poke-content .custom-block div[class*='language-'] {
+    margin: 8px 0;
+}
+
+.poke-content .custom-block div[class*='language-'] code {
+    font-weight: 400;
+    background-color: transparent;
+}
+

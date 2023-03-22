@@ -1,61 +1,61 @@
 /*颜色等基础样式*/
 .custom-block {
     border: 1px solid transparent;
-    border-radius: var(--dly-px-border-radius);
+    border-radius: var(--ib-px-border-radius);
     padding: 16px 16px 8px;
     line-height: 24px;
     font-size: 14px;
-    color: var(--dly-c-text-regular);
+    color: var(--ib-c-text-regular);
 }
 
 .custom-block.info {
-    border-color: var(--dly-custom-info-dark);
-    color: var(--dly-custom-info-dark);
-    background-color: var(--dly-custom-info-light);
+    border-color: var(--ib-custom-info-dark);
+    color: var(--ib-custom-info-dark);
+    background-color: var(--ib-custom-info-light);
 }
 
 .custom-block.info code {
-    background-color: var(--dly-custom-info-light);
+    background-color: var(--ib-custom-info-light);
 }
 
 .custom-block.tip {
-    border-color: var(--dly-custom-tip-dark);
-    color: var(--dly-custom-tip-dark);
-    background-color: var(--dly-custom-tip-light);
+    border-color: var(--ib-custom-tip-dark);
+    color: var(--ib-custom-tip-dark);
+    background-color: var(--ib-custom-tip-light);
 }
 
 .custom-block.tip code {
-    background-color: var(--dly-custom-tip-light);
+    background-color: var(--ib-custom-tip-light);
 }
 
 .custom-block.warning {
-    border-color: var(--dly-custom-warning-dark);
-    color: var(--dly-custom-warning-dark);
-    background-color: var(--dly-custom-warning-light);
+    border-color: var(--ib-custom-warning-dark);
+    color: var(--ib-custom-warning-dark);
+    background-color: var(--ib-custom-warning-light);
 }
 
 .custom-block.warning code {
-    background-color: var(--dly-custom-warning-light);
+    background-color: var(--ib-custom-warning-light);
 }
 
 .custom-block.danger {
-    border-color: var(--dly-custom-danger-dark);
-    color: var(--dly-custom-danger-dark);
-    background-color: var(--dly-custom-danger-light);
+    border-color: var(--ib-custom-danger-dark);
+    color: var(--ib-custom-danger-dark);
+    background-color: var(--ib-custom-danger-light);
 }
 
 .custom-block.danger code {
-    background-color: var(--dly-custom-danger-light);
+    background-color: var(--ib-custom-danger-light);
 }
 
 .custom-block.details {
-    border-color: var(--dly-custom-info-dark);
-    color: var(--dly-custom-info-dark);
-    background-color: var(--dly-custom-info-light);
+    border-color: var(--ib-custom-info-dark);
+    color: var(--ib-custom-info-dark);
+    background-color: var(--ib-custom-info-light);
 }
 
 .custom-block.details code {
-    background-color: var(--dly-custom-info-light);
+    background-color: var(--ib-custom-info-light);
 }
 
 .custom-block-title {

@@ -1,0 +1,12 @@
+@media (min-width: 640px) {
+    .iblog-content div[class*='language-'] {
+        border-radius: var(--ib-px-border-radius);
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 639px) {
+    .iblog-content li div[class*='language-'] {
+        border-radius: var(--ib-px-border-radius) 0 0 var(--ib-px-border-radius);
+    }
+}

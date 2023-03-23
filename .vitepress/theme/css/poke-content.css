@@ -18,7 +18,7 @@
 
 .poke-content h2 {
     margin: 48px 0 16px;
-    border-top: 1px solid var(--vp-c-divider);
+    border-top: 1px solid var(--poke-c-divider);
     padding-top: 24px;
     letter-spacing: -0.02em;
     line-height: 32px;
@@ -98,9 +98,9 @@
 
 .poke-content a {
     font-weight: 500;
-    color: var(--poke-c-text-primary);
+    color: black;
     text-decoration: underline var(--poke-c-text-placeholder);
-    transition: text-decoration 0.25s;
+    transition: text-decoration 0.5s;
 }
 
 .poke-content a:hover {
@@ -228,3 +228,16 @@
     background-color: transparent;
 }
 
+/**
+ * Images
+ * -------------------------------------------------------------------------- */
+.poke-content img {
+    margin: 16px -24px;
+    max-width: calc(100% + 48px);
+}
+@media (min-width: 640px) {
+    .poke-content img {
+        margin: 16px 0;
+        max-width: 100%;
+    }
+}

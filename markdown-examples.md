@@ -194,6 +194,10 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+## Images
+
+![example](https://ts1.cn.mm.bing.net/th/id/R-C.909139736b8bee17b50707506f7f803c?rik=PPGA9Jzj8BtLiQ&riu=http%3a%2f%2fuploadfile.bizhizu.cn%2f2015%2f1221%2f20151221022310156.jpg&ehk=jYE8M%2fmDiA4z%2bHbJs1crsA5i%2f7L577w2ZcPor%2bs0AqI%3d&risl=&pid=ImgRaw&r=0)
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

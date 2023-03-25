@@ -1,6 +1,23 @@
-# Markdown Extension Examples
+---
+title: "Markdown Extension Examples"
+create: 2023-03-25T05:54:10Z
+update: 2022-02-24T05:54:10Z
+labels: ["github","markdown"]
+---
 
+[api](api-examples.md)
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
+## Focused
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code  focus]
+    }
+  }
+}
+```
 
 ## Syntax Highlighting
 

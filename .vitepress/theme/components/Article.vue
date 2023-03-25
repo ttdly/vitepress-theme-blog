@@ -1,9 +1,12 @@
-<script setup xmlns="">
+<script setup >
 
+import ArticleTop from "./ArticleTop.vue";
 </script>
 
 <template>
   <div class="PokeMain">
+    <a href="/">Home</a>
+    <ArticleTop/>
     <Content class="poke-content" />
   </div>
 </template>
@@ -17,7 +20,7 @@
 }
 
 .poke-content{
-  padding: 128px 24px 0 24px;
+  padding: 0 24px 0 24px;
   margin: 0 auto;
 }
 
@@ -28,8 +31,8 @@
   }
   .poke-content{
     max-width: 752px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 

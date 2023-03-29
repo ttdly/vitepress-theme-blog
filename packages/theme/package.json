@@ -1,0 +1,29 @@
+{
+  "name": "vitepress-theme-poke",
+  "version": "1.0.0",
+  "description": "为poke定制的vitepress主题",
+  "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttdly/vitepress-theme-poke.git"
+  },
+  "keywords": [
+    "viteptess-theme",
+    "poke",
+    "blog",
+    "theme"
+  ],
+  "author": "秃头灯笼鱼",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttdly/vitepress-theme-poke/issues"
+  },
+  "homepage": "https://github.com/ttdly/vitepress-theme-poke#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "pako": "^2.1.0"
+  }
+}

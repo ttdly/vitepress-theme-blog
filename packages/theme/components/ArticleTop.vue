@@ -5,9 +5,9 @@
     <span class="time-info" v-if="headInfo.update">，最后修改于{{headInfo.update}}</span>
     <div style="height: 1rem"></div>
     <template v-if="headInfo.labels" v-for="label in headInfo.labels">
-      <a class="label-item"
+      <span class="label-item"
          :href="`/pages/labels.html?label=${label}`"
-         :style="`background: #${toHashColor(label)}`">{{label}}</a>
+         :style="`background: #${toHashColor(label)}`">{{label}}</span>
     </template>
   </div>
 </template>
@@ -111,7 +111,7 @@ const headInfo = computed(()=>{
   font-size: .8rem;
   border-radius: 4px;
   color: white;
-  cursor: pointer;
+  cursor: default;
   transition: all .25s;
   margin: 1px;
 }

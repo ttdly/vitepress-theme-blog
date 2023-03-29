@@ -3,6 +3,7 @@ title: "Markdown Extension Examples"
 create: 2023-03-25T05:54:10Z
 update: 2022-02-24T05:54:10Z
 labels: ["github","markdown"]
+reactions: ["EYES/1"]
 ---
 
 [api](api-examples.md)
@@ -13,7 +14,7 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 export default {
   data () {
     return {
-      msg: 'Focused!' // [!code  focus]
+      msg: 'Focused!' // [!code focus]
     }
   }
 }

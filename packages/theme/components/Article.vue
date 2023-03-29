@@ -1,13 +1,14 @@
 <script setup >
 
 import ArticleTop from "./ArticleTop.vue";
+import ArticleBottom from "./ArticleBottom.vue";
 </script>
 
 <template>
   <div class="PokeMain">
-    <a href="/">Home</a>
     <ArticleTop/>
     <Content class="poke-content" />
+    <ArticleBottom/>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import ArticleTop from "./ArticleTop.vue";
   background-color: var(--poke-c-bg-front);
   border: solid var(--poke-c-bg-border);
   border-width: 0 1px 0 1px;
+  padding-bottom: 50px;
 }
 
 .poke-content{

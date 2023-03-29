@@ -1,10 +1,11 @@
 {
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "build": "node .\\packages\\theme\\utils\\createPostsMap.js && vitepress build",
     "preview": "vitepress preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "release": "pnpm --filter=vitepress-theme-poke build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
@@ -12,5 +13,8 @@
     "typescript": "^5.0.2",
     "vitepress": "1.0.0-alpha.61",
     "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "pako": "^2.1.0"
   }
 }

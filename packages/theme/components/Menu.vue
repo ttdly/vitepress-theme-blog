@@ -9,15 +9,15 @@
   <div class="PostList" v-show="showMenu" @click="showMenu = false">
     <div class="container poke-content">
       <template v-if="state === 0" v-for="item in archiveMap.key">
-        <h1>{{item}}</h1>
+        <h1>{{ item }}</h1>
         <template v-for="post in archiveMap.keyMap[item]">
-          <p><a :href="post.url">{{post.data.title}}</a></p>
+          <p><a :href="post.url">{{ post.data.title }}</a></p>
         </template>
       </template>
       <template v-if="state === 1" v-for="(value,key) in labelMap">
-        <h1>{{key}}</h1>
+        <h1>{{ key }}</h1>
         <template v-for="post in value">
-          <p><a :href="post.url">{{post.data.title}}</a></p>
+          <p><a :href="post.url">{{ post.data.title }}</a></p>
         </template>
       </template>
     </div>
@@ -29,15 +29,15 @@ import {ref} from "vue";
 
 const showMenu = ref(false)
 const state = ref(0);
-const archiveMap = ref({key:0});
-const labelMap = ref({key:0})
-const showArchive = async function (){
+const archiveMap = ref({key: 0});
+const labelMap = ref({key: 0})
+const showArchive = async function () {
   showMenu.value = true;
   state.value = 0
   if (archiveMap.value.key !== 0) {
     return 0;
   }
-  try{
+  try {
     const data = await fetch('/archive.json');
     if (data.status === 200) {
       archiveMap.value = await data.json();
@@ -47,13 +47,13 @@ const showArchive = async function (){
   }
 }
 
-const showLabels = async function(){
+const showLabels = async function () {
   showMenu.value = true;
   state.value = 1
   if (labelMap.value.key !== 0) {
     return 0;
   }
-  try{
+  try {
     const data = await fetch('/labels.json');
     if (data.status === 200) {
       labelMap.value = await data.json();
@@ -65,13 +65,27 @@ const showLabels = async function(){
 </script>
 
 <style scoped>
-.Nav{
+.Nav {
   height: 100px;
   width: 100px;
   position: fixed;
+  z-index: 999;
   right: 0;
 }
-.PostList{
+
+.Nav ul li {
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.Nav ul {
+  text-align: center;
+  margin: 1rem;
+  background: var(--poke-c-bg-front);
+  border-radius: var(--poke-px-border-radius);
+}
+
+.PostList {
   height: 100vh;
   width: 100vw;
   display: block;
@@ -79,7 +93,8 @@ const showLabels = async function(){
   position: fixed;
   background: rgb(0 0 0 / 50%)
 }
-.PostList .container{
+
+.PostList .container {
   overflow: auto;
   cursor: default;
   height: 100vh;
@@ -89,11 +104,6 @@ const showLabels = async function(){
   background: var(--poke-c-bg-back);
   padding: 50px 24px 24px;
 }
-.Nav{
-  padding-top: 2rem;
-}
-.Nav li{
-  line-height: 2rem;
-  cursor: pointer;
-}
+
+
 </style>
